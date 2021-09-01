@@ -67,6 +67,10 @@
       color: hsl(257, 7%, 63%);
       font-size: 1.25rem
     }
+
+    #copy-button:hover{
+      background-color: black;
+    }
   </style>
 </head>
 
@@ -108,8 +112,8 @@
       </div>
     </div>
   </section>
-  <section style="position: relative; top: 6rem">
-    <div class="text-center side-margins">
+  <section style="background-color:#f0f1f6; margin-top: 8rem">
+    <div class="text-center side-margins" style="transform: translateY(-75px)">
       <div
         style="background-image: url('./images/bg-boost-desktop.svg'); height: 29%; padding: 3rem; background-color: hsl(257, 27%, 26%); border-radius: 15px"
         alt="">
@@ -117,17 +121,17 @@
           <form class="w-100 d-flex align-items-center">
             <input type="text" name="searchbar" id="url"
               style="width: 100%; height: 3.5rem; margin-right: 1.5rem; border-radius: 10px; border: 1px solid white; padding-left: 4%"
-              placeholder="Shorten a link here...">
-            <button class="btn font-bold text-white" onclick="shortener()"
+              placeholder="Shorten a link here..." class="font-normal">
+            <button class="btn font-bold text-white"
               style="background-color: hsl(180, 66%, 49%); background-color: hsl(180, 66%, 49%); border-radius: 10px; padding: 1.4% 4%; letter-spacing: 1.25px;">Shorten
               It!</button>
           </form>
         </div>
       </div>
+      <div id="url-cards"></div>
     </div>
-  </section>
-  <section style="background-color:#f0f1f6">
-    <div style="padding: 10% 0 5% 0; position: relative; margin: 2% 10% 0 10%">
+
+    <div style="padding: 0% 0 5% 0; position: relative; margin: 2% 10% 0 10%">
       <h3 class="font-bold mb-0 very-dark-blue text-center mb-3 mt-5" style="font-size: 2.5rem">Advanced Statistics</h3>
       <p class="font-normal grayish-violet text-center w-50 mx-auto" style="font-size: 1.05rem;line-height: 185%">Track
         how your links are performing across the web with our
