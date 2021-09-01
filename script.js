@@ -108,8 +108,8 @@ async function getUrl(url, index) {
         //button.removeEventListener("mouseenter", function(){});
         //button.removeEventListener("mouseleave", function(){});
         button.innerHTML = 'Copied!';
-        button.style.backgroundColor = "hsl(180, 66%, 49%)";
     });
+    button.style.backgroundColor = "hsl(180, 66%, 49%)";
 
     return stringify.result.full_short_link
     
