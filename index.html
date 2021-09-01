@@ -1,22 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script defer src="script.js"></script>
+
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .side-margins{
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .side-margins {
       margin: 2% 10%
     }
 
@@ -25,31 +36,32 @@
       font-weight: 700
     }
 
-    .font-normal{
+    .font-normal {
       font-family: 'Poppins', sans-serif;
       font-weight: 500
     }
 
-    .gray{
-      color:hsl(0, 0%, 75%);
+    .gray {
+      color: hsl(0, 0%, 75%);
     }
 
-    .grayish-violet{
+    .grayish-violet {
       color: hsl(257, 7%, 63%);
     }
 
-    .very-dark-blue{
+    .very-dark-blue {
       color: hsl(255, 11%, 22%);
     }
 
-    .very-dark-violet{
+    .very-dark-violet {
       color: hsl(260, 8%, 14%);
     }
-    .letter-spacing{
+
+    .letter-spacing {
       letter-spacing: .5px;
     }
 
-    ::placeholder{
+    ::placeholder {
       font-family: 'Poppins', sans-serif;
       font-weight: 500;
       color: hsl(257, 7%, 63%);
@@ -57,158 +69,179 @@
     }
   </style>
 </head>
+
 <body style="overflow-x: hidden">
-<header class="side-margins">
-  <nav>
-    <ul style="width: 88%; list-style: none; display: flex; align-items: center; justify-content: space-between; padding-left: 0">
-      <div style=" display: flex; align-items: center;">
-        <li style="margin-right: 8%"><img src="./images/logo.svg" alt="Logo"></li>
-        <li class="grayish-violet font-bold letter-spacing" style="font-size: .85rem; margin-right: 8%">Features</li>
-        <li class="grayish-violet font-bold letter-spacing" style="font-size: .85rem; margin-right: 8%">Pricing</li>
-        <li class="grayish-violet font-bold letter-spacing" style="font-size: .85rem; margin-right: 8%">Resources</li>
+  <header class="side-margins">
+    <nav>
+      <ul
+        style="width: 88%; list-style: none; display: flex; align-items: center; justify-content: space-between; padding-left: 0">
+        <div style=" display: flex; align-items: center;">
+          <li style="margin-right: 8%"><img src="./images/logo.svg" alt="Logo"></li>
+          <li class="grayish-violet font-bold letter-spacing" style="font-size: .85rem; margin-right: 8%">Features</li>
+          <li class="grayish-violet font-bold letter-spacing" style="font-size: .85rem; margin-right: 8%">Pricing</li>
+          <li class="grayish-violet font-bold letter-spacing" style="font-size: .85rem; margin-right: 8%">Resources</li>
+        </div>
+        <div style="display: flex; align-items: center;">
+          <p class="mb-0 grayish-violet font-bold letter-spacing" style="font-size: .85rem; padding-right: 40%">Login
+          </p>
+          <button class="btn font-bold text-white"
+            style=" margin-left: 8%; background-color: hsl(180, 66%, 49%); background-color: hsl(180, 66%, 49%); border-radius: 30px; padding: 7.5% 25%; font-size: .85rem">Sign
+            Up</button>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <section style="margin: 4% 0 2% 10%; position: relative">
+    <div class="d-flex align-items-center">
+      <div>
+        <h1 class="font-bold mb-0 very-dark-blue" style="font-size: 4.5rem">More than just shorter links</h1>
+        <p class="font-normal grayish-violet mb-5" style="font-size: 1.25rem; width: 85%; line-height: 185%">Build your
+          brand’s recognition and get detailed insights
+          on how your links are performing.
+        </p>
+        <button class="btn font-bold text-white"
+          style="background-color: hsl(180, 66%, 49%); background-color: hsl(180, 66%, 49%); border-radius: 30px; padding: 2.5% 7%; letter-spacing: 1.25px;">Get
+          Started</button>
       </div>
-      <div style="display: flex; align-items: center;">
-        <p class="mb-0 grayish-violet font-bold letter-spacing" style="font-size: .85rem; padding-right: 40%">Login</p>
-        <button class="btn font-bold text-white" style=" margin-left: 8%; background-color: hsl(180, 66%, 49%); background-color: hsl(180, 66%, 49%); border-radius: 30px; padding: 7.5% 25%; font-size: .85rem">Sign Up</button>
+      <div style="position: relative; right: -5%;">
+        <img src="images/illustration-working.svg" alt="Cartoon person working at a desk." class="w-125">
       </div>
-    </ul>
-  </nav>
-</header>
-<section style="margin: 4% 0 2% 10%; position: relative">
-  <div class="d-flex align-items-center">
-    <div>
-      <h1 class="font-bold mb-0 very-dark-blue" style="font-size: 4.5rem">More than just shorter links</h1>
-      <p class="font-normal grayish-violet mb-5" style="font-size: 1.25rem; width: 85%; line-height: 185%">Build your
-        brand’s recognition and get detailed insights
-        on how your links are performing.
-      </p>
-      <button class="btn font-bold text-white"
-        style="background-color: hsl(180, 66%, 49%); background-color: hsl(180, 66%, 49%); border-radius: 30px; padding: 2.5% 7%; letter-spacing: 1.25px;">Get
+    </div>
+  </section>
+  <section style="position: relative; top: 6rem">
+    <div class="text-center side-margins">
+      <div
+        style="background-image: url('./images/bg-boost-desktop.svg'); height: 29%; padding: 3rem; background-color: hsl(257, 27%, 26%); border-radius: 15px"
+        alt="">
+        <div>
+          <form class="w-100 d-flex align-items-center">
+            <input type="text" name="searchbar" id="url"
+              style="width: 100%; height: 3.5rem; margin-right: 1.5rem; border-radius: 10px; border: 1px solid white; padding-left: 4%"
+              placeholder="Shorten a link here...">
+            <button class="btn font-bold text-white" onclick="shortener()"
+              style="background-color: hsl(180, 66%, 49%); background-color: hsl(180, 66%, 49%); border-radius: 10px; padding: 1.4% 4%; letter-spacing: 1.25px;">Shorten
+              It!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section style="background-color:#f0f1f6">
+    <div style="padding: 10% 0 5% 0; position: relative; margin: 2% 10% 0 10%">
+      <h3 class="font-bold mb-0 very-dark-blue text-center mb-3 mt-5" style="font-size: 2.5rem">Advanced Statistics</h3>
+      <p class="font-normal grayish-violet text-center w-50 mx-auto" style="font-size: 1.05rem;line-height: 185%">Track
+        how your links are performing across the web with our
+        advanced statistics dashboard.</p>
+
+      <div style="margin-bottom: 5rem">
+        <!-- The three boxes -->
+        <div class="d-flex" style="position: relative">
+          <div style="width: 33%;">
+            <div
+              style="background-color:hsl(257, 27%, 26%); border-radius: 50%; padding: 5%; width: fit-content; position: relative; z-index: 2; left: 6.5%">
+              <img style="width: 100%" src="images/icon-brand-recognition.svg" alt="">
+            </div>
+            <div class="card" style="padding:18% 6.5% 8% 6.5%; position: relative; z-index: 1; top: -10%; border: 0">
+              <h4 class="font-bold mb-3" style="font-size: 1.25rem">Brand Recognition</h4>
+              <p class="font-normal grayish-violet" style="font-size: .9rem">Boost your brand recognition with each
+                click.
+                Generic links don’t
+                mean a thing. Branded links help instil confidence in your content.</p>
+            </div>
+          </div>
+          <div style="width: 33%; margin-top: 2rem; margin-left: 2rem">
+            <div
+              style="background-color:hsl(257, 27%, 26%); border-radius: 50%; padding: 5%; width: fit-content; position: relative; z-index: 2; left: 6.5%">
+              <img style="width: 100%" src="images/icon-detailed-records.svg" alt="">
+            </div>
+            <div class="card" style="padding:18% 6.5% 8% 6.5%; position: relative; z-index: 1; top: -10%; border: 0">
+              <h4 class="font-bold mb-3" style="font-size: 1.25rem">Detailed Records</h4>
+              <p class="font-normal grayish-violet" style="font-size: .9rem">Gain insights into who is clicking your
+                links.
+                Knowing when and where
+                people engage with your content helps inform better decisions.</p>
+            </div>
+          </div>
+          <div style="width: 33%; margin-top: 4rem; margin-left: 2rem">
+            <div
+              style="background-color:hsl(257, 27%, 26%); border-radius: 50%; padding: 5%; width: fit-content; position: relative; z-index: 2; left: 6.5%">
+              <img style="width: 100%" src="images/icon-fully-customizable.svg" alt="">
+            </div>
+            <div class="card" style="padding:18% 6.5% 8% 6.5%; position: relative; z-index: 1; top: -12%; border: 0">
+              <h4 class="font-bold mb-3" style="font-size: 1.25rem">Fully Customizable</h4>
+              <p class="font-normal grayish-violet" style="font-size: .9rem">Improve brand awareness and content
+                discoverability
+                through customizable
+                links, supercharging audience engagement.</p>
+            </div>
+          </div>
+        </div>
+        <!-- The line behind -->
+        <div style="position: relative; border-top: 10px solid hsl(180, 66%, 49%); top: -11rem"> </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Boost Your Link -->
+  <section>
+    <div class="text-center text-white"
+      style="background-image: url('./images/bg-boost-desktop.svg'); height: 29%; padding: 3rem; background-color: hsl(257, 27%, 26%);">
+      <h3 class="font-bold mb-0 text-whtie text-center mb-4 mt-3" style="font-size: 2.5rem">Boost your links today</h3>
+      <button class="btn font-bold text-white" onclick="shortener()"
+        style="background-color: hsl(180, 66%, 49%); background-color: hsl(180, 66%, 49%); border-radius: 30px; padding: 1% 2%; letter-spacing: 1.25px;">Get
         Started</button>
     </div>
-    <div style="position: relative; right: -5%;">
-      <img src="images/illustration-working.svg" alt="Cartoon person working at a desk." class="w-125">
-    </div>
-  </div>
-</section>
-<section style="position: relative; top: 6rem">
-  <div class="text-center side-margins">
-    <div style="background-image: url('./images/bg-boost-desktop.svg'); height: 29%; padding: 3rem; background-color: hsl(257, 27%, 26%); border-radius: 15px" alt="">
-      <div class="d-flex align-items-center">
-        <input type="text" name="searchbar" style="width: 100%; height: 3.5rem; margin-right: 1.5rem; border-radius: 10px; border: 1px solid white; padding-left: 4%" placeholder="Shorten a link here...">
-        <button class="btn font-bold text-white"
-        style="background-color: hsl(180, 66%, 49%); background-color: hsl(180, 66%, 49%); border-radius: 10px; padding: 1.4% 4%; letter-spacing: 1.25px;">Shorten It!</button>
-      </div>
-    </div>
-  </div>
-</section>
-<section style="background-color:#f0f1f6">
-  <div style="padding: 10% 0 5% 0; position: relative; margin: 2% 10% 0 10%">
-    <h3 class="font-bold mb-0 very-dark-blue text-center mb-3 mt-5" style="font-size: 2.5rem">Advanced Statistics</h3>
-    <p class="font-normal grayish-violet text-center w-50 mx-auto" style="font-size: 1.05rem;line-height: 185%">Track
-      how your links are performing across the web with our
-      advanced statistics dashboard.</p>
+  </section>
 
-    <div style="margin-bottom: 5rem">
-      <!-- The three boxes -->
-      <div class="d-flex" style="position: relative">
-        <div style="width: 33%;">
-          <div
-            style="background-color:hsl(257, 27%, 26%); border-radius: 50%; padding: 5%; width: fit-content; position: relative; z-index: 2; left: 6.5%">
-            <img style="width: 100%" src="images/icon-brand-recognition.svg" alt="">
-          </div>
-          <div class="card" style="padding:18% 6.5% 8% 6.5%; position: relative; z-index: 1; top: -10%; border: 0">
-            <h4 class="font-bold mb-3" style="font-size: 1.25rem">Brand Recognition</h4>
-            <p class="font-normal grayish-violet" style="font-size: .9rem">Boost your brand recognition with each click.
-              Generic links don’t
-              mean a thing. Branded links help instil confidence in your content.</p>
-          </div>
+  <!-- Footer -->
+  <section style="background-color: hsl(260, 8%, 14%);">
+    <div class="d-flex" style="margin: 0 10% 2% 10%; padding: 5% 0 0 0">
+      <div class="text-white" style="width: 35%">
+        <img src="images/logo-white.svg" style="width: 77%; color: white;">
+      </div>
+      <div class="d-flex justify-content-between" style="width: 45%; margin-right: 5%">
+        <div class="text-white mr-5">
+          <h5 class="font-bold mb-4 letter-spacing" style="font-size: .9rem">Features</h5>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Link Shortening</p>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Branded Links</p>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Analytics</p>
         </div>
-        <div style="width: 33%; margin-top: 2rem; margin-left: 2rem">
-          <div
-            style="background-color:hsl(257, 27%, 26%); border-radius: 50%; padding: 5%; width: fit-content; position: relative; z-index: 2; left: 6.5%">
-            <img style="width: 100%" src="images/icon-detailed-records.svg" alt="">
-          </div>
-          <div class="card" style="padding:18% 6.5% 8% 6.5%; position: relative; z-index: 1; top: -10%; border: 0">
-            <h4 class="font-bold mb-3" style="font-size: 1.25rem">Detailed Records</h4>
-            <p class="font-normal grayish-violet" style="font-size: .9rem">Gain insights into who is clicking your links.
-              Knowing when and where
-              people engage with your content helps inform better decisions.</p>
-          </div>
+        <div class="text-white mr-5">
+          <h5 class="font-bold mb-4 letter-spacing" style="font-size: .9rem">Resources</h5>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Blog</p>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Developers</p>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Support</p>
         </div>
-        <div style="width: 33%; margin-top: 4rem; margin-left: 2rem">
-          <div
-            style="background-color:hsl(257, 27%, 26%); border-radius: 50%; padding: 5%; width: fit-content; position: relative; z-index: 2; left: 6.5%">
-            <img style="width: 100%" src="images/icon-fully-customizable.svg" alt="">
-          </div>
-          <div class="card" style="padding:18% 6.5% 8% 6.5%; position: relative; z-index: 1; top: -12%; border: 0">
-            <h4 class="font-bold mb-3" style="font-size: 1.25rem">Fully Customizable</h4>
-            <p class="font-normal grayish-violet" style="font-size: .9rem">Improve brand awareness and content
-              discoverability
-              through customizable
-              links, supercharging audience engagement.</p>
-          </div>
+        <div class="text-white">
+          <h5 class="font-bold mb-4 letter-spacing" style="font-size: .9rem">Company</h5>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">About</p>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Our Team</p>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Careers</p>
+          <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Contact</p>
         </div>
       </div>
-      <!-- The line behind -->
-      <div style="position: relative; border-top: 10px solid hsl(180, 66%, 49%); top: -11rem">  </div>
-    </div>
-  </div>
-</section>
-
-<!-- Boost Your Link -->
-<section>
-  <div class="text-center text-white" style="background-image: url('./images/bg-boost-desktop.svg'); height: 29%; padding: 3rem; background-color: hsl(257, 27%, 26%);">
-    <h3 class="font-bold mb-0 text-whtie text-center mb-4 mt-3" style="font-size: 2.5rem">Boost your links today</h3>
-    <button class="btn font-bold text-white"
-        style="background-color: hsl(180, 66%, 49%); background-color: hsl(180, 66%, 49%); border-radius: 30px; padding: 1% 2%; letter-spacing: 1.25px;">Get Started</button>
-  </div>
-</section>
-
-<!-- Footer -->
-<section style="background-color: hsl(260, 8%, 14%);">
-  <div class="d-flex" style="margin: 0 10% 2% 10%; padding: 5% 0 0 0">
-    <div class="text-white" style="width: 35%">
-      <img src="images/logo-white.svg" style="width: 77%; color: white;">
-    </div>
-    <div class="d-flex justify-content-between" style="width: 45%; margin-right: 5%">
-      <div class="text-white mr-5">
-        <h5 class="font-bold mb-4 letter-spacing" style="font-size: .9rem">Features</h5>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Link Shortening</p>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Branded Links</p>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Analytics</p>
-      </div>
-      <div class="text-white mr-5">
-        <h5 class="font-bold mb-4 letter-spacing" style="font-size: .9rem">Resources</h5>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Blog</p>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Developers</p>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Support</p>
-      </div>
-      <div class="text-white">
-        <h5 class="font-bold mb-4 letter-spacing" style="font-size: .9rem">Company</h5>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">About</p>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Our Team</p>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Careers</p>
-        <p class="font-normal grayish-violet mb-2 letter-spacing" style="font-size: .9rem">Contact</p>
+      <div class="d-flex justify-content-end" style="width: 20%">
+        <a class="mr-4" href="www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt=""></a>
+        <a class="mr-4" href="www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt=""></a>
+        <a class="mr-4" href="www.pintrestcom" target="_blank"><img src="images/icon-pinterest.svg" alt=""></a>
+        <a class="mr-4" href="www.instagram.com" target="_blank"><img src="images/icon-instagram.svg" alt=""></a>
       </div>
     </div>
-    <div class="d-flex justify-content-end" style="width: 20%">
-      <a class="mr-4" href="www.facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt=""></a>
-      <a class="mr-4" href="www.twitter.com" target="_blank"><img src="images/icon-twitter.svg" alt=""></a>
-      <a class="mr-4" href="www.pintrestcom" target="_blank"><img src="images/icon-pinterest.svg" alt=""></a>
-      <a class="mr-4" href="www.instagram.com" target="_blank"><img src="images/icon-instagram.svg" alt=""></a>
+    <div class="attribution font-normal text-white">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="www.shandapinell.com">Shanda Pinell</a>.
     </div>
-  </div>
-  <div class="attribution font-normal text-white">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="www.shandapinell.com">Shanda Pinell</a>.
-  </div>
-</section>
+  </section>
 
-  
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
